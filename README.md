@@ -23,7 +23,7 @@ Projektauswahl. Der Druck auf `D02` bleibt frei.
 ## Download
 
 Die aktuelle, direkt importierbare `.lp5` steht auf der
-[GitHub-Release-Seite](https://github.com/c5vcpq5gsr-alt/codex-control-loupedeck-live-s/releases/latest)
+[GitHub-Release-Seite](https://github.com/r3d42-git/codex-control-loupedeck-live-s/releases/latest)
 zum Download bereit. Die zugehörige Datei `AI-Workspace-Live-S-<version>.lp5.sha256`
 ermöglicht bei Bedarf die Integritätsprüfung mit `shasum -a 256 -c <datei>`.
 
