@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" role="img" aria-label="Dictate">
+  <defs>
+    <radialGradient id="dictateGlow" cx="50%" cy="33%" r="72%">
+      <stop stop-color="#F59E0B" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#1D1205" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dictateSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="84" height="84" rx="16" fill="#160E04" stroke="#F59E0B" stroke-width="2"/>
+  <rect x="5" y="5" width="80" height="57" rx="14" fill="url(#dictateGlow)"/>
+  <g fill="#F8FAFC" filter="url(#dictateSoft)">
+    <rect x="23" y="37" width="4" height="15" rx="2"/>
+    <rect x="30" y="30" width="4" height="29" rx="2"/>
+    <rect x="37" y="24" width="4" height="41" rx="2"/>
+    <rect x="44" y="18" width="4" height="53" rx="2"/>
+    <rect x="51" y="24" width="4" height="41" rx="2"/>
+    <rect x="58" y="30" width="4" height="29" rx="2"/>
+    <rect x="65" y="37" width="4" height="15" rx="2"/>
+  </g>
+  <rect x="8" y="61" width="74" height="21" rx="9" fill="#160E04" stroke="#92400E"/>
+  <text x="45" y="75" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">DICTATE</text>
+  <rect x="29" y="84" width="32" height="2.5" rx="1.25" fill="#F59E0B"/>
+</svg>

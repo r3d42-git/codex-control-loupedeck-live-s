@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" role="img" aria-label="Release prompt">
+  <defs>
+    <linearGradient id="releaseBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062B3B"/>
+      <stop offset="1" stop-color="#06121E"/>
+    </linearGradient>
+    <filter id="releaseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="3" y="3" width="84" height="84" rx="16" fill="url(#releaseBg)" stroke="#22D3EE" stroke-width="2"/>
+  <path d="M36 24 25 45l11 21M54 24l11 21-11 21" fill="none" stroke="#F8FAFC" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" filter="url(#releaseGlow)"/>
+  <rect x="8" y="61" width="74" height="21" rx="9" fill="#07131F" stroke="#155E75"/>
+  <text x="45" y="75" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="11" font-weight="700" text-anchor="middle">RELEASE</text>
+  <rect x="29" y="84" width="32" height="2.5" rx="1.25" fill="#22D3EE"/>
+</svg>

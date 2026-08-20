@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" role="img" aria-labelledby="title">
+  <title id="title">Switch to Work</title>
+  <rect width="90" height="90" rx="14" fill="#111827"/>
+  <rect x="11" y="11" width="68" height="68" rx="11" fill="#A78BFA" opacity=".14"/>
+  <rect x="24" y="31" width="31" height="27" rx="4" fill="none" stroke="#EDE9FE" stroke-width="4"/>
+  <path d="M33 31v-4c0-2 1-3 3-3h7c2 0 3 1 3 3v4M24 42h31M37 42v4h6v-4" fill="none" stroke="#A78BFA" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M59 44h9m-4-4 4 4-4 4" fill="none" stroke="#A78BFA" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+</svg>

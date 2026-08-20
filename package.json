@@ -1,0 +1,13 @@
+{
+  "name": "loupedeck-live-s-ai-workspace",
+  "private": true,
+  "version": "0.27.0",
+  "description": "Visual Loupedeck Live S profile for Codex, ChatGPT and Work on macOS.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-profile.mjs",
+    "validate": "node tools/validate-profile.mjs",
+    "check": "npm run build && npm run validate"
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" role="img" aria-labelledby="title">
+  <title id="title">Switch to ChatGPT</title>
+  <rect width="90" height="90" rx="14" fill="#111827"/>
+  <rect x="11" y="11" width="68" height="68" rx="11" fill="#20C7B5" opacity=".14"/>
+  <path d="M29 30c0-4 3-7 7-7h16c4 0 7 3 7 7v15c0 4-3 7-7 7H42l-7 7v-7c-4 0-6-3-6-7Z" fill="none" stroke="#E7FFFB" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M37 38h14M37 44h9" stroke="#20C7B5" stroke-linecap="round" stroke-width="3"/>
+  <path d="M61 44h8m-4-4 4 4-4 4" fill="none" stroke="#20C7B5" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+</svg>

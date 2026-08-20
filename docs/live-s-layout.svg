@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 510" role="img" aria-labelledby="title desc">
+  <title id="title">Loupedeck Live S architecture</title>
+  <desc id="desc">A five by three touch grid with New Chat on T01, an unavailable Choose Project placeholder on T02, Plan on T03, Fast Mode on T04, Next Task on T05, Quick Chat on T06, Add Files on T07, a release prompt on T08, Dictate on T09, Switch Chat on T10, Side Chat on T11, Add Photos on T12, a project review prompt on T13, Voice on T14, Previous Task on T15, two Codex dials, one unassigned left side button and direct ChatGPT, Work and Codex buttons on the right.</desc>
+  <rect width="720" height="510" rx="28" fill="#0F172A"/>
+  <text x="48" y="67" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="29" font-weight="700">AI Workspace — Live S</text>
+  <text x="48" y="98" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="18">Codex · D01 Modell · D02 Aufwand · 14 aktive Grid-Tasten</text>
+  <g fill="#111827" stroke="#475569" stroke-width="2">
+    <rect x="48" y="135" width="112" height="80" rx="12"/><rect x="170" y="135" width="112" height="80" rx="12"/><rect x="292" y="135" width="112" height="80" rx="12"/><rect x="414" y="135" width="112" height="80" rx="12"/><rect x="536" y="135" width="112" height="80" rx="12"/>
+    <rect x="48" y="225" width="112" height="80" rx="12"/><rect x="170" y="225" width="112" height="80" rx="12"/><rect x="292" y="225" width="112" height="80" rx="12"/><rect x="414" y="225" width="112" height="80" rx="12"/><rect x="536" y="225" width="112" height="80" rx="12"/>
+    <rect x="48" y="315" width="112" height="80" rx="12"/><rect x="170" y="315" width="112" height="80" rx="12"/><rect x="292" y="315" width="112" height="80" rx="12"/><rect x="414" y="315" width="112" height="80" rx="12"/><rect x="536" y="315" width="112" height="80" rx="12"/>
+  </g>
+  <g fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="104" y="171">New</text><text x="104" y="191">Chat</text>
+    <text x="226" y="171">Choose</text><text x="226" y="191">Project</text>
+    <text x="348" y="171">Plan</text><text x="348" y="191">Mode</text>
+    <text x="470" y="171">Fast</text><text x="470" y="191">Mode</text>
+    <text x="592" y="171">Next</text><text x="592" y="191">Task</text>
+    <text x="104" y="261">Quick</text><text x="104" y="281">Chat</text>
+    <text x="226" y="261">Add</text><text x="226" y="281">Files</text>
+    <text x="348" y="261">Release</text><text x="348" y="281">Prompt</text>
+    <text x="470" y="271">Dictate</text>
+    <text x="592" y="261">Switch</text><text x="592" y="281">Chat</text>
+    <text x="104" y="351">Side</text><text x="104" y="371">Chat</text>
+    <text x="226" y="351">Add</text><text x="226" y="371">Photos</text>
+    <text x="348" y="351">Project</text><text x="348" y="371">Review</text>
+    <text x="470" y="361">Voice</text>
+    <text x="592" y="351">Previous</text><text x="592" y="371">Task</text>
+  </g>
+  <g stroke-width="2">
+    <circle cx="35" cy="171" r="23" fill="#FF9F43" stroke="#FFB66E"/><circle cx="35" cy="260" r="23" fill="#FF9F43" stroke="#FFB66E"/>
+    <circle cx="680" cy="171" r="23" fill="#FF0000" stroke="#FF7373"/><circle cx="680" cy="260" r="23" fill="#FFE600" stroke="#FFF17A"/><circle cx="680" cy="350" r="23" fill="#16A36A" stroke="#5CD69E"/>
+  </g>
+  <g fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+    <text x="35" y="176">D01</text><text x="35" y="265">D02</text>
+    <text x="680" y="175" font-size="9">ChatGPT</text><text x="680" y="265" fill="#111827">Work</text><text x="680" y="355">Codex</text>
+  </g>
+</svg>

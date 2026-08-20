@@ -1,0 +1,18 @@
+[
+  {
+    "command": "composer.decreaseReasoningEffort",
+    "key": "Command+Control+Alt+3"
+  },
+  {
+    "command": "composer.increaseReasoningEffort",
+    "key": "Command+Control+Alt+4"
+  },
+  {
+    "command": "composer.togglePlanMode",
+    "key": "Command+Control+Alt+5"
+  },
+  {
+    "command": "composer.toggleFastMode",
+    "key": "Command+Control+Alt+6"
+  }
+]

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" role="img" aria-labelledby="title">
+  <title id="title">Navigate to Codex</title>
+  <rect width="90" height="90" rx="14" fill="#111827"/>
+  <rect x="11" y="11" width="68" height="68" rx="11" fill="#FF9F43" opacity=".14"/>
+  <path d="m38 28-12 17 12 17M52 28l12 17-12 17M47 25l-6 40" fill="none" stroke="#FF9F43" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M65 44h5m-4-4 4 4-4 4" fill="none" stroke="#FFE7CD" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

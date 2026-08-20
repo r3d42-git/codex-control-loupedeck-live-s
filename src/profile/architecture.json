@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 2,
+  "profile": {
+    "id": "A1C0DE501E5A4E3D8A1D6E5F00000008",
+    "displayName": "AI Workspace — ChatGPT (Live S)",
+    "description": "ChatGPT application profile with one Codex workspace, task, composer, Fast Mode, dictation, voice, plan and prompt controls, two Codex dial controls, and direct ChatGPT, Work and Codex app-mode buttons.",
+    "version": "0.27.0",
+    "applicationBinding": "ChatGPT (com.openai.codex)"
+  },
+  "device": {
+    "model": "Loupedeck Live S",
+    "loupedeckDeviceType": "Loupedeck50",
+    "touchGrid": {
+      "columns": 5,
+      "rows": 3,
+      "widthPx": 480,
+      "heightPx": 270
+    },
+    "dialCount": 2,
+    "roundButtonControlCount": 8
+  },
+  "workspaces": [
+    {
+      "id": "codex",
+      "displayName": "Codex",
+      "accent": "#FF9F43",
+      "workspaceIcon": "codex-workspace.svg",
+      "containerId": "codex"
+    }
+  ],
+  "workspaceContainers": [
+    {
+      "id": "codex",
+      "displayName": "Codex",
+      "pageIds": ["codex"],
+      "isHome": true
+    }
+  ],
+  "slots": {
+    "touch": [
+      "T01", "T02", "T03", "T04", "T05",
+      "T06", "T07", "T08", "T09", "T10",
+      "T11", "T12", "T13", "T14", "T15"
+    ],
+    "dials": ["D01", "D02"]
+  },
+  "actionPolicy": {
+    "touch": "codex_task_history_composer_fast_dictation_voice_plan_and_prompt_controls_only",
+    "dialRotate": "codex_d01_model_and_codex_d02_reasoning_effort_only",
+    "dialPress": "codex_d01_model_confirmation_only",
+    "fnLayer": "unassigned",
+    "keyboardShortcuts": "allowed_on_codex_task_navigation_and_dials_and_app_mode_buttons_only",
+    "uiAutomation": "model_picker_navigation_on_codex_d01_only",
+    "profileNavigation": "unassigned"
+  },
+  "dialAssignments": [
+    {
+      "workspaceContainerId": "codex",
+      "slot": "D01",
+      "profileControlIndex": 0,
+      "label": "Modell",
+      "left": ["Ctrl+Shift+M", "ArrowUp"],
+      "right": ["Ctrl+Shift+M", "ArrowDown"],
+      "press": "Return",
+      "icon": "dial-model.svg"
+    },
+    {
+      "workspaceContainerId": "codex",
+      "slot": "D02",
+      "profileControlIndex": 1,
+      "label": "Aufwand",
+      "left": ["Cmd+Opt+Ctrl+3"],
+      "right": ["Cmd+Opt+Ctrl+4"],
+      "press": null,
+      "icon": "dial-effort.svg"
+    }
+  ],
+  "touchAssignments": [
+    {
+      "id": "previous-task",
+      "workspaceId": "codex",
+      "slot": "T15",
+      "profileControlIndex": 14,
+      "label": "Previous Task",
+      "description": "Switch immediately to the previous task in the current task sequence.",
+      "command": "previousThread",
+      "shortcut": "Cmd+Opt+Ctrl+Up",
+      "loupedeckKeyboardKey": "Command+Control+AltOrOption+ArrowUp___132105___Cmd+Opt+Ctrl+ArrowUp___",
+      "icon": "previous-task.svg"
+    },
+    {
+      "id": "switch-chat",
+      "workspaceId": "codex",
+      "slot": "T10",
+      "profileControlIndex": 9,
+      "label": "Switch Chat",
+      "description": "Search for and switch to another task.",
+      "command": "searchChats",
+      "shortcut": "Cmd+Opt+Ctrl+K",
+      "loupedeckKeyboardKey": "Command+Control+AltOrOption+KeyK___132105___Cmd+Opt+Ctrl+K___",
+      "icon": "switch-chat.svg"
+    },
+    {
+      "id": "next-task",
+      "workspaceId": "codex",
+      "slot": "T05",
+      "profileControlIndex": 4,
+      "label": "Next Task",
+      "description": "Switch immediately to the next task in the current task sequence.",
+      "command": "nextThread",
+      "shortcut": "Cmd+Opt+Ctrl+Down",
+      "loupedeckKeyboardKey": "Command+Control+AltOrOption+ArrowDown___132105___Cmd+Opt+Ctrl+ArrowDown___",
+      "icon": "next-task.svg"
+    },
+    {
+      "id": "new-chat",
+      "workspaceId": "codex",
+      "slot": "T01",
+      "profileControlIndex": 0,
+      "label": "New Chat",
+      "description": "Start a new Codex task in the current context.",
+      "command": "newTask",
+      "shortcut": "Cmd+N",
+      "loupedeckKeyboardKey": "Command+KeyN___132105___Cmd+N___",
+      "icon": "new-chat.svg"
+    },
+    {
+      "id": "quick-chat",
+      "workspaceId": "codex",
+      "slot": "T06",
+      "profileControlIndex": 5,
+      "label": "Quick Chat",
+      "description": "Start a lightweight chat in the quick composer.",
+      "command": "quickChat",
+      "shortcut": "Cmd+Opt+N",
+      "loupedeckKeyboardKey": "Command+AltOrOption+KeyN___132105___Cmd+Opt+N___",
+      "icon": "quick-chat.svg"
+    },
+    {
+      "id": "side-chat",
+      "workspaceId": "codex",
+      "slot": "T11",
+      "profileControlIndex": 10,
+      "label": "Side Chat",
+      "description": "Open the current task as a side chat.",
+      "command": "openSideChat",
+      "shortcut": "Cmd+Opt+S",
+      "loupedeckKeyboardKey": "Command+AltOrOption+KeyS___132105___Cmd+Opt+S___",
+      "icon": "side-chat.svg"
+    },
+    {
+      "id": "choose-project",
+      "workspaceId": "codex",
+      "slot": "T02",
+      "profileControlIndex": 1,
+      "label": "Choose Project",
+      "description": "Open the project picker for the current composer.",
+      "command": "composer.openProjectPicker",
+      "shortcut": "Cmd+Opt+Shift+O",
+      "loupedeckKeyboardKey": "Command+AltOrOption+Shift+KeyO___132105___Cmd+Opt+Shift+O___",
+      "icon": "choose-project.svg"
+    },
+    {
+      "id": "add-files",
+      "workspaceId": "codex",
+      "slot": "T07",
+      "profileControlIndex": 6,
+      "label": "Add Files",
+      "description": "Attach files or folders to the active composer.",
+      "command": "composer.addFiles",
+      "shortcut": "Cmd+Opt+Shift+F",
+      "loupedeckKeyboardKey": "Command+AltOrOption+Shift+KeyF___132105___Cmd+Opt+Shift+F___",
+      "icon": "add-files.svg"
+    },
+    {
+      "id": "add-photos",
+      "workspaceId": "codex",
+      "slot": "T12",
+      "profileControlIndex": 11,
+      "label": "Add Photos",
+      "description": "Attach images to the active composer.",
+      "command": "composer.addPhotos",
+      "shortcut": "Cmd+Opt+Shift+P",
+      "loupedeckKeyboardKey": "Command+AltOrOption+Shift+KeyP___132105___Cmd+Opt+Shift+P___",
+      "icon": "add-photos.svg"
+    },
+    {
+      "id": "toggle-plan-mode",
+      "workspaceId": "codex",
+      "slot": "T03",
+      "profileControlIndex": 2,
+      "label": "Plan",
+      "description": "Toggle Plan mode for the active composer.",
+      "command": "composer.togglePlanMode",
+      "shortcut": "Cmd+Opt+Ctrl+5",
+      "loupedeckKeyboardKey": "Command+Control+AltOrOption+Key5___132105___Cmd+Opt+Ctrl+5___",
+      "icon": "plan-mode.svg"
+    },
+    {
+      "id": "release-skill-prompt",
+      "workspaceId": "codex",
+      "slot": "T08",
+      "profileControlIndex": 7,
+      "label": "Release",
+      "description": "Insert the verified macOS GitHub release prompt into the active composer without sending it.",
+      "actionType": "sendText",
+      "text": "Nutze den Skill macos-github-release für dieses Release.",
+      "icon": "release-prompt.svg"
+    },
+    {
+      "id": "project-review-prompt",
+      "workspaceId": "codex",
+      "slot": "T13",
+      "profileControlIndex": 12,
+      "label": "Review",
+      "description": "Insert a read-only, evidence-based review prompt for the current project into the active composer without sending it.",
+      "actionType": "sendText",
+      "text": "Führe einen gründlichen, rein lesenden Review des aktuellen Projekts durch. Lies zuerst PROJECT_SUMMARY.md oder PROJEKT_SUMMARY.md, falls vorhanden. Prüfe anschließend den aktuellen Code, Konfigurationen, Tests und bei einem Git-Repository den Arbeitsstand und Diff. Suche nach konkreten Bugs, Regressionen, Risiken für Datenverlust oder Sicherheit, fehlenden Tests und offensichtlichen UX-Problemen. Ändere keine Dateien, führe keine externen Aktionen aus und erfinde keine Befunde. Berichte zuerst die wichtigsten Feststellungen nach Schweregrad mit Datei:Zeile und nachvollziehbarer Begründung; nenne danach offene Risiken, sinnvolle Tests und, falls alles sauber ist, ausdrücklich: Keine konkreten Befunde.",
+      "icon": "project-review.svg"
+    },
+    {
+      "id": "start-dictation",
+      "workspaceId": "codex",
+      "slot": "T09",
+      "profileControlIndex": 8,
+      "label": "Dictate",
+      "description": "Toggle macOS Dictation for the focused text field.",
+      "command": "macos.toggleDictation",
+      "shortcut": "Cmd+Opt+Ctrl+9",
+      "loupedeckKeyboardKey": "ControlOrCommand+Control+AltOrOption+Key9___132105___Cmd+Opt+Ctrl+9___mac-25#¤%&+?1835049#¤%&+?9#¤%&+?com.apple.keylayout.USInternational-PC",
+      "icon": "dictate.svg"
+    },
+    {
+      "id": "start-voice-mode",
+      "workspaceId": "codex",
+      "slot": "T14",
+      "profileControlIndex": 13,
+      "label": "Voice",
+      "description": "Start Voice mode from the active Codex composer.",
+      "command": "composer.startVoiceMode",
+      "shortcut": "Ctrl+Shift+V",
+      "loupedeckKeyboardKey": "Control+Shift+KeyV___132105___Ctrl+Shift+V___",
+      "icon": "voice-mode.svg"
+    },
+    {
+      "id": "toggle-fast-mode",
+      "workspaceId": "codex",
+      "slot": "T04",
+      "profileControlIndex": 3,
+      "label": "Fast Mode",
+      "description": "Toggle Fast Mode for the active Codex composer.",
+      "command": "composer.toggleFastMode",
+      "shortcut": "Cmd+Opt+Ctrl+6",
+      "loupedeckKeyboardKey": "Command+Control+AltOrOption+Key6___132105___Cmd+Opt+Ctrl+6___",
+      "icon": "fast-mode.svg"
+    }
+  ],
+  "roundButtonAssignments": [
+      {
+        "controlId": "right-top",
+        "profileControlIndex": 1,
+        "type": "appModeDirect",
+        "target": "chatgpt",
+        "label": "ChatGPT",
+        "description": "Switch directly to ChatGPT.",
+        "shortcut": "Ctrl+1",
+        "loupedeckKeyboardKey": "Control+Key1___132105___Ctrl+1___mac-18#¤%&+?262145#¤%&+?1#¤%&+?com.apple.keylayout.USInternational-PC",
+        "icon": "chatgpt-shortcut.svg",
+        "color": "#FF0000"
+      },
+      {
+        "controlId": "right-middle",
+        "profileControlIndex": 2,
+        "type": "appModeDirect",
+        "target": "work",
+        "label": "Work",
+        "description": "Switch directly to Work.",
+        "shortcut": "Ctrl+2",
+        "loupedeckKeyboardKey": "Control+Key2___132105___Ctrl+2___mac-19#¤%&+?262145#¤%&+?2#¤%&+?com.apple.keylayout.USInternational-PC",
+        "icon": "work-shortcut.svg",
+        "color": "#FFE600"
+      },
+      {
+        "controlId": "right-bottom",
+        "profileControlIndex": 3,
+        "type": "appModeDirect",
+        "target": "codex",
+        "label": "Codex",
+        "description": "Switch directly to Codex.",
+        "shortcut": "Ctrl+3",
+        "loupedeckKeyboardKey": "Control+Key3___132105___Ctrl+3___mac-20#¤%&+?262145#¤%&+?3#¤%&+?com.apple.keylayout.USInternational-PC",
+        "icon": "codex-shortcut.svg",
+        "color": "#16A36A"
+      }
+  ]
+}
